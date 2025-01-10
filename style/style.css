@@ -1,0 +1,304 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* For nav-bar Section  */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 25px;
+    justify-content: space-between;
+}
+.nav-bar-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-bar-link #nav-bar-links ul{
+    display: flex;
+    flex-direction: row;
+}
+.nav-bar-link #nav-bar-links ul li{
+    list-style: none;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.nav-bar-link #nav-bar-search input{
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.medium{
+    padding: 10px 25px;
+}
+
+/* For Featured Section  */
+.feature{
+    padding: 10px 25px;
+}
+.feature li{
+    text-decoration: none;
+    list-style: none;
+}
+.feature li a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 15px 0px;
+    border-bottom: 1px solid darkblue;
+}
+.feature li a:hover{
+    border-bottom: 1px solid black;
+}
+
+
+/* For Features Section  */
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+    justify-content: space-between;
+    
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 48%;
+    height: 250px;
+    align-items: center;
+    border: 0.5px solid black ;
+    margin: 8px 0px;
+    border-radius: 10px;
+}
+.card #card-image{
+    width: 100%;
+    height: 250px;
+}
+.card #card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card #card-text{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 25px;
+}
+#card-text-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#card-text-user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0px 10px;
+}
+#user-name{
+    display: block;
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+/* Stories Section  */
+.stories{
+    padding: 10px 25px;
+}
+.stories li{
+    text-decoration: none;
+    list-style: none;
+}
+.stories li a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 15px 0px;
+    border-bottom: 1px solid darkblue;
+}
+.stories li a:hover{
+    border-bottom: 1px solid black;
+}
+.story-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.story-card{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    height: auto;
+    border: 1px solid black;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+.story-card #story-card-image{
+    display: inline-flex;
+    width: 100%;
+    height: 250px;
+}
+.story-card #story-card-image img{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.story-card #story-card-text{
+    padding: 20px 15px;
+}
+.story-card #story-card-text h3{
+    margin: 0px;
+}
+
+/* media query for tablet  */
+@media only screen and (max-width: 705px){
+    /* For Featured Section  */
+.feature{
+    padding: 8px 20px;
+}
+
+
+/* For Features Section  */
+.cards{
+    justify-content: center;
+    
+}
+.card{
+    width: 100%;
+    align-items: center;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+.card #card-image{
+    width: 100%;
+    height: 250px;
+}
+.card #card-image img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+/* Stories Section  */
+.stories{
+    padding: 8px 20px;
+}
+
+
+
+.story-cards{
+    justify-content: space-between;
+}
+.story-card{
+    width: 48%;
+    margin: 8px 0px;
+    border-radius: 8px;
+}
+.story-card #story-card-image{
+    width: 100%;
+    
+}
+.story-card #story-card-image img{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.story-card #story-card-text{
+    padding: 15px 10px;
+}
+.story-card #story-card-text h3{
+    margin-top: 8px;
+}
+}
+
+
+/* media query for small screen  */
+@media only screen and (max-width: 456px){
+    .nav-bar{
+        padding: 10px;
+    }
+    .nav-bar-link #nav-bar-search input{
+        display: none;
+    }
+    .medium{
+        padding: 10px;
+    }
+    .feature{
+        padding: 10px;
+    }
+    .feature li a{
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+    
+    /* For Features Section  */
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    
+}
+.card{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+.card #card-image{
+    width: 100%;
+}
+.card #card-image img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+
+}
+.card #card-text{
+    padding: 5px 10px;
+}
+
+
+/* Stories Section  */
+.stories{
+    padding: 10px;
+}
+.stories li a{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.story-cards{
+    justify-content: center;
+}
+.story-card{
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+.story-card #story-card-image{
+    display: inline-flex;
+    width: 100%;
+}
+.story-card #story-card-image img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.story-card #story-card-text{
+    padding: 5px 10px;
+}
+
+
+}
